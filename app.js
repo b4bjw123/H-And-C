@@ -5,32 +5,28 @@ let Coke = "";
 let title = document.getElementById("title");
 let h1 = document.getElementById("h1");
 
-jQuery.get('H.csv', function(data) {
+jQuery.get('H.txt', function(data) {
     H = data.split("\n");
     H = H.filter(n => n);
     // console.log(H);
 });
 
-jQuery.get('C.csv', function(data) {
+jQuery.get('C.txt', function(data) {
     C = data.split("\n");
     C = C.filter(n => n);
     // console.log(C);
 });
 
 function randomInt(max){
-    return Math.floor(Math.random()*max);
+    return Math.floor(Math.random()*max-1);
 }
 
 function generateH(){
     Hooker = H[randomInt(H.length)];
-    // console.log(Hooker);
-    // return Hooker;
 }
 
 function generateC(){
     Coke = C[randomInt(C.length)];
-    // console.log(Coke);
-    // return Coke;
 }
 
 
