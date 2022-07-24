@@ -33,8 +33,8 @@ function generateC(){
 
 
 setTimeout("generateC()",20);
-setTimeout("generateH()",20);
-setTimeout("set()",30);
+setTimeout("generateH()",40);
+setTimeout("set()",60);
 
 
 function set(){
